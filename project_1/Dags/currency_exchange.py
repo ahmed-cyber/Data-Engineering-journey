@@ -71,7 +71,7 @@ start_date=datetime(year=2022, month=11, day=8),
 
     loading_data_task = BashOperator(task_id='loading_data_task',
                                       bash_command=(
-                                                        'PGPASSWORD=hndsa2017 psql -d currdb -U postgres -h localhost -c "'
+                                                        'PGPASSWORD=YOUR-PASSWORD psql -d currdb -U YOUR-USER -h localhost -c "'
                                                         '\copy curr_ex(symbols, currency, rates,timestamp,base)'
                                                         "FROM '/home/ahmed/final.csv' "
                                                         "DELIMITER ',' "
