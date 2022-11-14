@@ -1,0 +1,1 @@
+To run this project you have to create a database with name currdb
